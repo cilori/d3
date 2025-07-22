@@ -1,0 +1,28 @@
+# Refactored Acolite Processing Configuration
+# ==========================================
+
+# REQUIRED: Path to Acolite launch script
+acolite_script_path=/path/to/acolite/launch_acolite.py
+
+# Default values for missing environmental data
+default_wind_speed=5.0
+default_aot_value=0.1
+
+# Processing options
+keep_individual_rrs=false
+
+# Acolite processing parameters
+l2w_parameters=Rrs_*
+atmospheric_correction=acolite
+rgb_rhot=True
+rgb_rhos=True
+map_l2w=True
+
+# Output options
+output_geolocation=True
+output_geometry=True
+
+# Quality control
+l2w_mask_threshold=0.02
+l2w_mask_cirrus=True
+l2w_mask_negative=True
