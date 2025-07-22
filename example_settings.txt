@@ -1,0 +1,39 @@
+# Example Acolite Settings File
+# Lines starting with # are comments
+
+# Basic processing settings
+l2w_parameters=Rrs_*
+atmospheric_correction=True
+gains=True
+gains_toa=True
+
+# Output settings
+output_geolocation=True
+output_geometry=True
+merge_tiles=False
+merge_zones=False
+
+# Processing options
+dsf_path_reflectance=ACOLITE-LUT-ACOLITE
+lut_sensor=S2A_MSI,S2B_MSI,L8_OLI,L9_OLI
+
+# Quality control
+l2w_mask_threshold=0.02
+l2w_mask_smooth=True
+l2w_mask_high_toa=True
+
+# Band settings - will be overridden by script for wind and aot
+# wind=5.0
+# aot=0.1
+
+# Additional processing parameters
+skip_thermal=True
+rgb_rhot=True
+rgb_rhos=True
+
+# File handling
+delete_netcdf=True
+verbosity=5
+
+# Individual Rrs file cleanup (set to False to keep individual files)
+keep_individual_rrs=False
