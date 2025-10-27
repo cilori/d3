@@ -1,0 +1,16 @@
+# Enhanced Acolite Processing Settings
+# ====================================
+
+# Path to Acolite launch script (REQUIRED)
+acolite_path=/path/to/acolite/launch_acolite.py
+
+# Default values for missing environmental data
+default_wind_speed=5.0
+default_aot_value=0.1
+
+# Processing options
+keep_individual_rrs=false
+
+# Acolite processing parameters
+l2w_parameters=Rrs_*
+atmospheric_correction=acolite
